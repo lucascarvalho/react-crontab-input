@@ -2,7 +2,7 @@ $primary: rgb(24, 144, 255);
 $error: red;
 $gray: #AAA;
 
-.crontab-input {
+:global .crontab-input {
   .explanation {
     text-align: center;
     margin: 16px 0 8px;
