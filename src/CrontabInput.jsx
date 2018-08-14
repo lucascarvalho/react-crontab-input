@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cronstrue from 'cronstrue/i18n';
 import Cron from "cron-converter";
 import valueHints from './valueHints';
-import './crontab-input.css';
+import './crontab-input.scss';
 import locales from "./locales";
 
 class CrontabInput extends Component {
@@ -86,7 +86,7 @@ class CrontabInput extends Component {
     toHighlight.sort((a, b) => {
       return a.start - b.start;
     });
-    
+
     let pointer = 0;
     toHighlight.forEach(item => {
       if (pointer > item.start) {
